@@ -1,12 +1,12 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
-  "name": "timezone-converter",
+  "name": "raycast-timezone-converter",
   "title": "Date & Time",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Converts any time to any timezone",
   "icon": "command-icon.png",
   "author": "joao.mainka",
-  "owner": "evolutt",
+  "owner": "joao.mainka",
   "license": "MIT",
   "commands": [
     {
