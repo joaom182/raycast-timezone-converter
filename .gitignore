@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 yarn-error.log
+.npmrc
 
 # misc
 .DS_Store
