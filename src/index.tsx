@@ -1,7 +1,7 @@
 import { Action, ActionPanel, Color, Detail, Form, Icon, useNavigation } from "@raycast/api";
 import { useCachedState } from "@raycast/utils";
 import { DateTime } from "luxon";
-import { Fragment, createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
+import { Fragment, createContext, useCallback, useContext, useMemo, useState } from "react";
 
 function formatZoneName(zoneName: string) {
   return zoneName.replaceAll("/", " - ").replaceAll("_", " ");
@@ -113,6 +113,11 @@ function Timezones() {
         }
         metadata={
           <Detail.Metadata>
+            {!selectedTimezones?.length && (
+              <>
+                <Detail.Metadata.Label title={`No timezones added`} text={`Add a timezones to appear here`} />
+              </>
+            )}
             {selectedTimezones?.map((zoneName, index) => {
               const date = DateTime.fromJSDate(time.toJSDate()).setZone(zoneName);
               return (
