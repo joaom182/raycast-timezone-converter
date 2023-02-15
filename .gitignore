@@ -4,6 +4,7 @@
 /node_modules
 yarn-error.log
 .npmrc
+yarn.lock
 
 # misc
 .DS_Store
