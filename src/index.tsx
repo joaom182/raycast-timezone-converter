@@ -115,7 +115,7 @@ function Timezones() {
           <Detail.Metadata>
             {!selectedTimezones?.length && (
               <>
-                <Detail.Metadata.Label title={`No timezones added`} text={`Add a timezones to appear here`} />
+                <Detail.Metadata.Label title={`No timezones added`} text={`Add timezones to appear here`} />
               </>
             )}
             {selectedTimezones?.map((zoneName, index) => {
